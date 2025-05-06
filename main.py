@@ -106,3 +106,81 @@ match m1:
         print("Case is 4")
     case _:
         print("No case found")
+
+# Write a python program to print table between 1 and 10
+n = int(input("Enter a number: "))
+if(0<=n<11):
+    for i in range(1,11):
+        print(n,"*",i,"=",n*i)
+else:
+    print("Enter a no. between 0 and 10")
+
+#     Loop
+
+for i in range(5):
+    print(i+1)
+
+s = {2,25,355,432,543,654,765,876,987,1098}
+for i in s:
+    print(i)
+
+
+i=0
+while(i<10):
+    print(i+1)
+    i+=1
+print("End of the program...")
+
+# Functions
+
+def add(a,b):
+    return print(a+b)
+
+add(10,20)
+
+def letterGenerator(name,date):
+    st= f"Hii mam,\n This is {name} and I will not come to school on {date}"
+    print(st)
+letterGenerator("Prateek","26th May 2025")
+
+# try except
+
+try:
+    a = int(input("Give a no.: "))
+    print(a+3)
+except Exception as e:
+    print("some error occured",e)
+
+    # file I/O
+#     Writing in a file
+
+s = "Prateek is an ugly boy"
+# Method 1
+# with open("test.txt","w") as f:
+#     f.write(s)
+# Method 2
+f = open("test.txt","w")
+f.write(s)
+f.close()
+
+
+#     Reading from a file
+# Method 1
+with open("Prateek.txt","r") as f:
+    s= f.read()
+    print(s)
+# # Method 2
+# f = open("test.txt","r")
+# s= f.read()
+# f.close()
+
+#     Appending in a file (It does not clear already existing data while writing something
+
+s = "Prateek is an ugly boy"
+# Method 1
+# with open("Prateek.txt","a") as f:
+#     f.write(" but he is ugly too")
+# Method 2
+f = open("test.txt","a")
+f.write(" but he is ugly too")
+f.close()
