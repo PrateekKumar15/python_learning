@@ -184,3 +184,15 @@ s = "Prateek is an ugly boy"
 f = open("test.txt","a")
 f.write(" but he is ugly too")
 f.close()
+
+# OOPS
+
+class Emplyee:
+    def __init__(self,name,salary):
+        self.name = name
+        self.salary = salary
+    def display(self):
+        print(f'My name is {self.name} and my salary is {self.salary}')
+
+prateek = Emplyee("Prateek",10000000)
+prateek.display()
